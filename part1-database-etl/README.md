@@ -1,11 +1,11 @@
-##Part 1- Database-etl ##
-This section includes etl process where data needs to be extracted from csv files, transform it by cleaning and formatting the data and loading into database.
-Tools used:
+## Part 1- Database-etl ##
++ This section includes etl process where data needs to be extracted from csv files, transform it by cleaning and formatting the data and loading into database.
++ Tools used:
 1.Jupyter notebook for python scripting.
 2.Mysql workbench for sql operation.
 
 Steps:
-Creation of python script which includes logic to load csv data and perform various operation acoording to data types like formatting dates, modifying data type of primary key attribute from int to varchar, handelling null values etc.
++ Creation of python script which includes logic to load csv data and perform various operation acoording to data types like formatting dates, modifying data type of primary key attribute from int to varchar, handelling null values etc.
 Afterwards data needs to be inserted into database where i have created 4 tables:
 1.customer
 2.Products
@@ -14,7 +14,7 @@ Afterwards data needs to be inserted into database where i have created 4 tables
 
 Data need to be inserted respective to tables. 
 
-Note: I have created one more table named 'sales' to keep transactional/buisiness raw data,
++ Note: I have created one more table named 'sales' to keep transactional/buisiness raw data,
 Since the provided sales CSV contains transaction-level data with product details and string-based IDs, I designed a sales table to match the source structure and ensure successful ETL loading. Normalization into orders and order_items can be done as a downstream process.”
 
 Buisiness queries results:
