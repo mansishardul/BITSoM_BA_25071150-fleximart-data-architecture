@@ -7,21 +7,21 @@ Business Process: Sales transactions
 **Measures**:
 
 * quantity\_sold: Units sold  
-*   
+ 
 * unit\_price: Product price at sale time  
-*   
+  
 * discount\_amount: Discount applied  
-*   
+  
 * total\_amount: quantity × unit\_price − discount
 
 **Foreign Keys**:
 
 * date\_key → dim\_date  
-*   
+  
 * product\_key → dim\_product  
-*   
+  
 * customer\_key → dim\_customer  
-*   
+ 
 * DIMENSION TABLE: dim\_date
 
 Purpose: Time-based analysis  
@@ -29,20 +29,13 @@ Type: Conformed dimension
 
 **Attributes:**
 
-* date\_key (PK): Surrogate key (YYYYMMDD)  
-*   
+* date\_key (PK): Surrogate key (YYYYMMDD)   
 * full\_date  
-*   
 * day\_of\_week  
-*   
-* day\_of\_month  
-*   
-* month  
-*   
-* month\_name  
-*   
-* quarter  
-    
+* day\_of\_month   
+* month      
+* month\_name   
+* quarter      
 * year  
 * is\_weekend
 
@@ -52,16 +45,11 @@ Purpose: Product analysis
 
 **Attributes:**
 
-* product\_key (PK): Surrogate key  
-*   
-* product\_id: Business product code  
-*   
-* product\_name  
-*   
-* category  
-*   
-* subcategory  
-*   
+* product\_key (PK): Surrogate key    
+* product\_id: Business product code     
+* product\_name     
+* category    
+* subcategory    
 * unit\_price
 
 DIMENSION TABLE: **dim\_customer**
@@ -76,9 +64,6 @@ Purpose: Customer behavior analysis
 * city  
 * state  
 * customer\_segment
-
-
-
 
 **Design Decisions**
 
